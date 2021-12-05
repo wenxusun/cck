@@ -1,0 +1,11 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: cck-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        service: ${spring.application.name}
+        namespace: 519bdb33-f723-40dd-8004-ff59f82aaf82
